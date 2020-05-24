@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Annonce comptable</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="./css/logosite.jpg">
+  </head>
+  <body>
+      <header>
+        <nav>
+        <div>
+          <a href="./main.html"><img class="logo" src="./css/logosite.png" alt="Acceuil"></a>    
+        </div>
+        
+        
+        <div class="lien">
+          <a href="./achat.html">Achat</a>
+        </div>
+        <div>
+          <p>Nous connaitre</p><!--Nous connaitre (FAQ, EQUIPE)-->
+          <div class="submenu">
+            <div><a href="./faq.html">F.A.Q</a></div>
+            <div><a href="./equipe.html">Equipe</a></div>
+
+          </div>
+        </div>
+        <div>
+          <p>Divers</p><!--sdbjsd (Contact, presse)-->
+          <div class="submenu">
+            <div><a href="./contact.html">Contact</a></div>
+            <div><a href="./presse.html">Presse</a></div>
+            <div><a href="./conditionVente.html">Mentions légales</a></div>
+          </div>
+        </div>
+        <div>
+          <p>Postuler</p><!--recrutement-->
+          <div class="submenu">
+            <div><a href="./comptable.html">Comptable</a></div>
+            <div><a href="./manager.html">Manager</a></div>
+            <div><a href="./secretaire.html">Secrétaire</a></div>
+          </div>
+        </div>
+        <!--sdbjsd (Contact, presse)-->
+
+
+      </nav>
+  </header>
+  <main>
+      <h1 class="titre2nd">Comptable</h1>
+      <div>
+          <h2>En quoi consiste ce poste?</h2>
+
+          <p>Essentiel à toute organisation, le comptable enregistre les dépenses, les recettes et les investissements de l'entreprise au quotidien. Dans une petite entreprise, le comptable unique est sur tous les fronts. Il prépare la clôture des comptes annuels qui seront vérifiés par l'expert-comptable et certifiés par le commissaire aux comptes, établit les feuilles de paie des salariés et les déclarations fiscales et sociales. Dans une grande entreprise, il travaille au sein d'une équipe et est spécialisé (comptabilité clients ou fournisseurs, chargé des paies ou comptable analytique) et travaille sous la responsabilité du chef comptable. Dans un cabinet d'expertise comptable, il est chargé de différents dossiers d'entreprises, en tant que collaborateur, sous la responsabilité de l'expert-comptable. Il peut également avoir une action de conseil et une action commerciale de développement de son portefeuille clients. C'est un métier qui comprend des périodes chargées et parfois stressantes, mais qui recrute régulièrement. Une première expérience est souvent exigée.</p>
+      </div>
+
+      
+
+      <div>
+          <h2>Que recherchons nous?</h2>    
+          <p>Nous recherchons des personnes motivées, qui seront s'adapter rapidement à leur nouvel univers de travail tout en apportant une bonne ambiance</p>
+      </div>
+      <div>
+
+          <h2>Vous souhaitez postuler pour ce poste?</h2>
+          <p>Il ne vous reste plus qu'à remplir ce petit formulaire:</p>
+
+          <form method="post" action="reponse.html" name="formulairecompta"  >
+              <fieldset>
+                  <label for="surname">Prénom :</label>
+                  <input type="text" id="surname" name="Prénom" required minlength="2" maxlength="20" size="10">
+                  <br>
+
+                  <label for="firstname">Objet :</label>
+                  <input type="text" id="firstname" name="Nom" required minlength="2" maxlength="30" size="10">
+                  <br>
+
+                  <label for="mail">Adresse mail :</label>
+                  <input type="text" id="mail" name="AdresseMail" required minlength="10" maxlength="35" size="10">
+                  <br>
+
+                  <label for="phone">Numéro de téléphone :</label>
+                  <input type="tel" id="phone" name="NumTél" required minlength="10" maxlength="10" size="10">
+                  <br>
+
+                  <label for="city">Ville où vous souhaitez postulez:</label>
+                  <select id="city" name="Ville" size="1">
+                      <option>Veuillez selectionner une réponse (ville)</option>
+                      <option>Montpellier</option>
+                      <option>Paris</option>
+                      <option>Lyon</option>
+                      <option>Marseille</option>
+                      <option>Lille</option>
+                      <option>Nantes</option>
+                  </select>
+                  <br>
+              </fieldset>
+              <fieldset>
+               <label for="request">Votre lettre de motivation</label>
+               <textarea id="request" name="requette" maxlength="3000" required minlength="10" rows="5" cols="33"></textarea>
+               <br>
+           </fieldset>
+
+           <input type="submit" value="Envoyer le formulaire">
+       </form>
+   </div>
+  </main>
+  </body>
+  </html>
