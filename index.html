@@ -1,541 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ROURE Elie</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="all,follow">
-    <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <!-- Font Awesome CSS-->
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <!-- Google fonts - Roboto + Roboto Slab-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
-    <!-- owl carousel-->
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.violet.css">
-    <!-- animate.css-->
-    <link rel="stylesheet" href="vendor/animate.css/animate.css">
-    <!-- theme stylesheet-->
-    <link rel="stylesheet" href="css/style.violet.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Leaflet CSS - For the map-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
-    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-  </head>
-  <body>
-    <!-- Reference item-->
-    <!-- navbar-->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container"><a href="#intro" class="navbar-brand scrollTo">e-Portfolio</a>
-          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Accueil</a></li>
-              <li class="nav-item"><a href="#about" class="nav-link link-scroll">A propos de moi</a></li>
-              <!--<li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
-              <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Testimonials</a></li>-->
-              <li class="nav-item"><a href="#references" class="nav-link link-scroll">Mon travail</a></li>
-              <!--<li class="nav-item"><a href="#customers" class="nav-link link-scroll">Clients</a></li>
-              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>-->
-            </ul>
 
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- Intro Image-->
-    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
-      <div class="container text-center">
-        <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div>
-        <h1 data-animate="fadeInDown" class="text-shadow mb-5">Bonjour !</h1>
-        <p data-animate="slideInUp" class="h3 text-shadow text-400">Je suis Elie ROURE étudiant en informatique</p>
-      </div>
-    </section>
-    <!-- About-->
-    <section id="about" class="about-section">
-      <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">A propos de moi</h2>
-        </header>
-        <div class="row">
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <p>Apprenti développeur, je m'intéresse au développement d'application. J'ai commencé à apprendre l'informatique en autodidacte au collège. </p>
-            <p>Je veux allier deux passions, l'informatique et la musique. C'est pour cela que je veux développer du materiel de musique, de nouveaux logiciels ou bien même créer de nouveaux instruments de musique.</p>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='ressources/css/site.css'>
+  <script src='ressources/js/main.js'></script>
+</head>
 
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-6">
-            <div class="skill-item">
-              <div class="progress-title">Java</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">HTML/CSS</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">SQL</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">PLSQL</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">JavaFx</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">C</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill6"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">PHP</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 60%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill7"></div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="progress-title">Unity</div>
-              <div class="progress">
-                <div role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill8"></div>
-              </div>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-6">
-          <h6 data-animate="fadeInDown" class="title">Détails</h6>
-          <p><strong>Date de naissance :</strong> 07/09/2001 (19 ans)</p>
-          <p><strong>Numéro de téléphone :</strong> +33 07 50 83 34 74</p>
-          <p><strong>Adresse e-mail :</strong> elieeroure@gmail.com</p>
-          <p><strong>Adresse e-mail :</strong> elie.roure@etu.umontpellier.fr</p>
-          <p><strong>Adresse postale :</strong> 81 Rue Michel Trocmé<br>34070 Montpellier</p>
-          <p><strong><a href="CV_Roure_Elie.pdf" target="_blank">Mon CV</a></strong></p>
-          </div>
-          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/about.png" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
-        </div>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
+      </ul>
+  </header>
+  <main>
+    <div id="description" class="profile section">
+      <img src="ressources/img/avatar.jpg" alt="Avatar" class="avatar">
+      <div class="text-description">
+        <h1>Bonjour, je suis Elie ROURE</h1>
+        <p >Passionné par les interfaces intuitives et les architectures robustes, je conçois des applications qui font gagner du temps à vos utilisateurs et à vos équipes. Que ce soit un prototype rapide ou une solution à grande échelle, j’apporte méthodes, qualité et réactivité pour transformer une idée en produit concret</p>
+
       </div>
-    </section>
-    <!-- Service-->
-    <!--<section id="services" class="bg-gradient services-section">
-      <div class="container">
-        <header class="text-center">
-          <h2 data-animate="fadeInDown" class="title">Services</h2>
-        </header>
-        <div class="row services text-center">
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><i class="fa fa-search"></i></div>
-            <h3 class="heading mb-3 text-400">Consulting</h3>
-            <p class="text-left description">On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be abroad. Relation breeding be as repeated strictly followed margaret. One gravity son brought shyness waiting regular led ham.</p>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><i class="fa fa-html5"></i></div>
-            <h3 class="heading mb-3 text-400">HTML coding</h3>
-            <p class="text-left description">Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at. Assurance perpetual he in oh determine as.</p>
-          </div>
-          <div data-animate="fadeInUp" class="col-lg-4">
-            <div class="icon"><i class="fa fa-tachometer"></i></div>
-            <h3 class="heading mb-3 text-400">PHP webdelopment</h3>
-            <p class="text-left description">Rooms oh fully taken by worse do. Points afraid but may end law lasted. Was out laughter raptures returned outweigh. Luckily cheered colonel me do we attacks on highest enabled. Tried law yet style child. Bore of true of no be deal.</p>
-          </div>
-        </div>
-        <hr data-animate="fadeInUp">
-        <div data-animate="fadeInUp" class="text-center">
-          <p class="lead">Would you like to know more or just discuss something?</p>
-          <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
-        </div>
-      </div>
-    </section>-->
-    <!-- Testimonials-->
-    <!--<section id="testimonials" class="testimonials-section bg-gray">
-      <div class="container">
-        <header class="text-center mb-2">
-          <h2 data-animate="fadeInUp" class="title">My customers said<br><span>about me</span></h2>
-          <p data-animate="fadeInUp" class="lead">I am always glad to hear that my customers leave satisfied. Some of them shared with you their insights on our cooperation.</p>
-        </header>
-        <ul data-animate="fadeInUp" class="owl-carousel owl-theme testimonials equalize-height">
-          <li class="item">
-            <div class="testimonial full-height">
-              <div class="text">
-                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-              </div>
-              <div class="bottom">
-                <div class="icon"><i class="fa fa-quote-left"></i></div>
-                <div class="name-picture"><img alt="" src="img/person-1.jpg">
-                  <h5>John McIntyre</h5>
-                  <p>CEO, TransTech</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="testimonial full-height">
-              <div class="text">
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. &quot;What is happened to me? &quot; he thought. It was not a dream.</p>
-              </div>
-              <div class="bottom">
-                <div class="icon"><i class="fa fa-quote-left"></i></div>
-                <div class="name-picture"><img alt="" src="img/person-2.jpg">
-                  <h5>John McIntyre</h5>
-                  <p>CEO, TransTech</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="testimonial full-height">
-              <div class="text">
-                <p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-              </div>
-              <div class="bottom">
-                <div class="icon"><i class="fa fa-quote-left"></i></div>
-                <div class="name-picture"><img alt="" src="img/person-3.jpg">
-                  <h5>John McIntyre</h5>
-                  <p>CEO, TransTech</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="testimonial full-height">
-              <div class="text">
-                <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
-              </div>
-              <div class="bottom">
-                <div class="icon"><i class="fa fa-quote-left"></i></div>
-                <div class="name-picture"><img alt="" src="img/person-4.jpg">
-                  <h5>John McIntyre</h5>
-                  <p>CEO, TransTech</p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="item">
-            <div class="testimonial full-height">
-              <div class="text">
-                <p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad. Gregor then turned to look out the window at the dull weather. Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
-              </div>
-              <div class="bottom">
-                <div class="icon"><i class="fa fa-quote-left"></i></div>
-                <div class="name-picture"><img alt="" src="img/person-4.jpg">
-                  <h5>John McIntyre</h5>
-                  <p>CEO, TransTech</p>
-                </div>
-              </div>
-            </div>
-          </li>
+    </div>
+
+    <div id="skills-web"  >
+
+      <div class="skills-web-front section">
+        <h3>Compétences Front-end</h3>
+        <ul class="skill-list">
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" />  Vue.js</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Blazor" />  Blazor</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Bootstrap" />  Bootstrap</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Twig" />  Twig</li>
         </ul>
       </div>
-    </section>-->
-    <!-- Statistics-->
-    <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
-      <div class="container">
-        <div class="row showcase text-center"> 
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-align-justify"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">7</span><br>Sites Web</h5>
-            </div>
-          </div>
-          <!--<div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-users"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">50</span><br>Satisfied Clients</h5>
-            </div>
-          </div>-->
-          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-copy"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">14</span><br>Projets</h5>
-            </div>
-          </div>
-         <!-- <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
-            <div class="item">
-              <div class="icon"><i class="fa fa-font"></i></div>
-              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">333</span><br>Magazines and Brochures</h5>
-            </div>
-          </div>-->
-        </div>
+      <div class="skills-web-back section">
+        <h3>Compétences Back-end</h3>
+        <ul class="skill-list">
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Node.js</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Symfony</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> REST API</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> SOAP API</li>
+        </ul>
       </div>
-      <div class="dark-mask"></div>
-    </section>
-    <!--
-    *** REFERENCES IMAGE ***
-    _________________________________________________________
-    -->
-    <section id="references">
-      <div class="container">
-        <div class="col-sm-12">
-          <div class="mb-5 text-center">
-            <h2 data-animate="fadeInUp" class="title">Mon travail</h2>
-            <p data-animate="fadeInUp" class="lead">Sélection de mes projets réalisés</p>
-          </div>
-          <ul id="filter" data-animate="fadeInUp">
-            <li class="active"><a href="#" data-filter="all">Tous</a></li>
-            <li><a href="#" data-filter="webdesign">Developpement Web</a></li>
-            <li><a href="#" data-filter="unity">Unity</a></li>
-            <li><a href="#" data-filter="javafx">JavaFx</a></li>
-            <li><a href="#" data-filter="autre">Autre</a></li>
-          </ul>
-          <div id="detail">
-            <div class="row">
-              <div class="col-lg-10 mx-auto"><span class="close">×</span>
-                <div id="detail-slider" class="owl-carousel owl-theme"></div>
-                <div class="text-center">
-                  <h1 id="detail-title" class="title"></h1>
-                </div>
-                <div id="detail-content"></div>
-              </div>
-            </div>
-          </div>
-          <!-- Reference detail-->
-          <div id="references-masonry" data-animate="fadeInUp">
-            <div class="row">
-                  <div data-category="autre" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/projetApplication.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Projet d'application</h3>
-                            <p>Etude d'une organisation d'entreprise</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_ProjetApplication.png" class="sr-only reference-description">
-                        <p>Projet réalisé lors de mon troisième semestre d'IUT Informatique.</p>
-                        <p>Nous devions réaliser une analyse des produits et de l'organisation d'un organisateur de congres sur les mathode de travail informatique.</p>
-                        <p>Dans ce projet, j'étais le chef de projet. J'atittrais les taches aux differents membres de mon équipe, réaliser les rapports et participer au reunion avec le client</p>
-                        
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/etuAide.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Etu'Aide</h3>
-                            <p>Site internet pour aider les nouveaux étudiants dans les démarches administatives</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_Etuaide.png" class="sr-only reference-description">
-                        <p>Lors de la Nuit de l'Informatique 2019, nous devions créer un site internet à la destination des nouveaux étudiants de France</p>
-                        <p>Ce site devait répondre à plusieurs attentes. C'est une plateforme simple d'usage pour diriger les étudiants vers différents services, tels que l'assurance maladie, les Crous, l'allocations logement etc... </p>
-                        <p>Dans ce projet je devais recenser toutes les informations utiles aux étudiants et les mettre en forme. Pour cela j'ai réalisé des textes classiques et une carte clicable de la France permetant d'être redirigé vers les différents Crous.</p>
-                        <!--<p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visiter le site</a>--></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="unity" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/pEtC.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Pointel et Clickel</h3>
-                            <p>Jeu Point n Click dans l'univers d'Hansel et Gretel</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_PointelNClickel.png" class="sr-only reference-description">
-                        <p>Lors de la CodeGameJam 2020, nous devions coder un jeu sur le thème : Cute and Creapy.</p>
-                        <p>Notre équipe a décidé de réaliser un Point n Click sur le thème d'Hansel et Gretel sous le moteur Unity.</p>
-                        <p>Sur ce projet j'ai réalisé l'inventaire de notre personnage, avec les objets intéractifs que l'on peut ramasser durant la partie, ainsi que certaines animations des énigmes. J'ai également participé à la validation des musiques du jeu réalisées par Masami Komuro.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/lattes_logo.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Lattes Echecs</h3>
-                            <p>Site internet pour le club d'échecs de Lattes</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_Lattes.jpg" class="sr-only reference-description">
-                        <p>Lors de notre deuxième semestre d'IUT nous devions réaliser un site internet en appliquant la méthode SCRUM et en utilisant un CMS</p>
-                        <p>Nous étions une équipe au service du club d'échecs de Lattes. Pour la réalisation du site internet nous avons utilisé Wordpress</p>
-                        <p>Dans ce projet j'avais le rôle de Product Owner et de développeur. Je m'occupais donc de la relation client et du codage. Je me suis investi sur la fonctionnalité du rôle du membre, avec ses accès, ses restrictions et les actions qu'il peut effectuer sur le site.</p>
-                        <p class="buttons text-center"><a href="http://webinfo.iutmontp.univ-montp2.fr/~dasilvaj/wordpress/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visiter le site</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="javafx" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/escapeGame.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Escape Game</h3>
-                            <p>Escape game dans l'univers des Simpson</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_EscapeGame.png , img/scenePrincipal.png , img/sceneSaxo.png" class="sr-only reference-description">
-                        <p>Ce projet consistait à créer un escape game en JavaFx avec toute la classe. Nous avons constitué plusieurs groupes afin de se répartir le travail. Chaque groupe devait créer une énigme dans l'univers des Simpson.</p>
-                        <p>Notre groupe était chargé de créer une énigme sur le thème de la musique qui se déroule dans la chambre de Lisa.  Si la musique est reproduite sans erreur, l'énigme est résolue et le joueur peut passer à l'énigme suivante.</p>
-                        <p>J'ai interprété la musique du générique des Simpson à reproduire ainsi qu'un instrument de musique semblable à un piano pour rejouer les notes entendues. Je me suis également occupé de détourer les objets intéractifs dans la scène, de les rendre clicables et ainsi d'activer un événement.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="webdesign" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/biosurfers.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Biosurfers</h3>
-                            <p>Réalisation d'un site dynamique à la destination des surfers de france</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_Biosurfers.png" class="sr-only reference-description">
-                        <p>Lors de la Nuit de l'Informatique 2020, nous devions créer un site internet à la destination des surfeur de France</p>
-                        <p>Ce site devait répondre à plusieurs attentes. C'est une platforme d'echange entre les différents surfeurs. Ils peuvent mettre des rapports de session, en indiquant la houle, la temperature, la polution etc...</p>
-                        <p>Dans ce projet j'ai réalisé la base de donnée ainsi qu'un defi de la nuit en JavaScript ou nous devions retrouver un imposteur.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="autre" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/studio_logo.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Studio Morphine</h3>
-                            <p>Création d'une équipe d'étudiants pour les différents événements</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_Studio.jpg" class="sr-only reference-description">
-                        <p>Studio Morphine est une équipe de six membres qui se sont associés pour travailler sur les différents événements tels que la CodeGameJam ou la Nuit de l'Info.</p>
-                        <ul>
-                          <li>Ewan Mahu</li>
-                          <li>Ylona Fabiani</li>
-                          <li>Augustin Frey</li>
-                          <li>Louis Burnichon</li>
-                          <li>Luca Gregoire</li>
-                          <li>Elie Roure</li>
-                        </ul>
-                        <p class="buttons text-center"><a href="https://www.instagram.com/studio_morphine/" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visiter l'Instagram de l'équipe</a></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-category="javafx" class="reference-item col-lg-3 col-md-6">
-                    <div class="reference"><a href="#"><img src="img/projetS3.png" alt="" class="img-fluid">
-                        <div class="overlay">
-                          <div class="inner">
-                            <h3 class="h4 reference-title">Générateur de carte procedurale</h3>
-                            <p>Génerateur de carte procedural a la The Elder Scroll III : Daggerfall</p>
-                          </div>
-                        </div></a>
-                      <div data-images="img/main-slider_ProjetS3.png" class="sr-only reference-description">
-                        <p>Projet tutoré de notre semestre 3. Nous devions réaliser une carte qui se génère proceduralement survant une certaine graine donnée. Cette carte a 2 niveau de precision. La taille de cette derniere peut etre infini car nous générons que des bout de carte</p>
-                        <p>Dans ce projet je me suis attarder sur les Interaction Homme Machine.</p>
-                        <!--<p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>-->
-                      </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
-        </div>
+
+    </div>
+    
+    <div id="skills" >
+      <div class="skills-techno section">
+        <h3>Technologies</h3>
+        <ul class="skill-list">
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> HTML</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> CSS</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> JavaScript</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> C#</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> .Net</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Windows Forms</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> WPF</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Java</li>
+        </ul>
       </div>
-    </section>
-    <!-- Customers-->
-    <!--<section id="customers" class="customers-section bg-gray">
-      <div class="container">
-        <div class="col-md-12">
-          <div class="row align-items-center">
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-1.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-2.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-3.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-4.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-5.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-            <div class="col-lg-2 col-md-4 col-sm-6">
-              <div class="customer"><img src="img/customers/logo-6.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
-            </div>
-          </div>
-        </div>
+      <div class="skills-logiciel section">
+        <h3>Outils</h3>
+        <ul class="skill-list">
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Git</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Visual Studio</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Visual Studio Code</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> JetBrains IDEs</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Postman</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> Bruno</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> HeidiSQL</li>
+          <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Vue.js" /> SourceTree</li>
+        </ul>
       </div>
-    </section>-->
-    <!-- Contact-->
-    <!--<section id="contact" data-animate="bounceIn" class="contact-section contact">
-      <div class="container">
-        <header class="text-center">
-          <h2 class="title">Contact me</h2>
-        </header>
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <form id="contact-form" method="post" action="">
-              <div class="messages"></div>
-              <div class="controls">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
-                  </div>
-                  <div class="col-md-6">
-                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
-                  </div>
-                  <div class="col-md-12">
-                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
-                  </div>
-                  <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-outline-primary">Send message</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section><-->
-    <!-- Map-->
-    <!--<div id="map"></div>-->
-    <footer class="main-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-center text-lg-left">
-            <p class="social"><a href="https://www.facebook.com/elie.roure.5/" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a><a href="https://www.instagram.com/no_elier/" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fa fa-instagram"></i></a><a href="https://www.linkedin.com/in/elie-roure-a49b78193/" data-wow-delay="0.4s" class="external linkedin wow fadeInUp"><i class="fa fa-linkedin"></i></a><a href="https://github.com/elie-roure" data-wow-delay="0.6s" class="github wow fadeInUp"><i class="fa fa-github"></i></a><a href="https://www.instagram.com/studio_morphine/" data-wow-delay="0.8s" class="instagram wow fadeInUp"><i class="fa fa-instagram"></i></a></p>
-          </div>
-          <!-- /.6-->
-          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
-            <p>© 2021 ROURE Elie. All rights reserved.</p>
-          </div>
-          <div class="col-12 mt-4">
-            <p class="template-bootstrapious">Template by <a href='https://bootstrapious.com/p/bootstrap-carousel'>Bootstrapious</a> & <a href="https://fity.cz/ostrava">Fity</a></p>
-            <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
-    <script src="js/front.js"></script>
-  </body>
+
+    </div>
+
+  </main>
+  <footer>
+
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+
 </html>
