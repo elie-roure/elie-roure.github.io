@@ -224,7 +224,7 @@ body {
 /* =========================
    Projects
    ========================= */
-#projects {
+.projects-grid {
     display: flex;
     flex-flow: wrap;
 }
@@ -377,7 +377,7 @@ body {
    Projects
    ========================= */
    
-   #projects{
+   .projects-grid{
       flex-direction: column;
    }
    .project-card {
