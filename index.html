@@ -1,45 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Elie Roure</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='ressources/css/site.css'>
-  <script src='ressources/js/main.js'></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+
+ 
+  <link rel="stylesheet" href="ressources/css/site.css" />
+  <script defer src="ressources/js/main.js"></script>
+
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="site-header">
+    <nav class="container">
       <ul class="navbar">
         <li class="nav-item"><a href="#description">Accueil</a></li>
-        <li class="nav-item"><a href="#skills-web">Compétences Web</a></li>
-        <li class="nav-item"><a href="#skills">Compétences</a></li>
-        <li class="nav-item"><a href="#projects">Projets</a></li>
+        <li class="nav-item"><a href="#title-skills-web">Compétences Web</a></li>
+        <li class="nav-item"><a href="#title-skills">Compétences</a></li>
+        <li class="nav-item"><a href="#title-projects">Projets</a></li>
       </ul>
+    </nav>
   </header>
-  <main>
-    <div id="description" class="profile section">
-      <img src="ressources/img/avatar.jpg" alt="Avatar" class="avatar">
+
+  <main class="container">
+    <section id="description" class="profile section glass">
+      <img src="ressources/img/avatar.jpg" alt="Avatar" class="avatar" />
       <div class="text-description">
         <h1>Bonjour, je suis Elie Roure</h1>
         <p>Passionné par les interfaces intuitives et les architectures robustes, je conçois des applications qui font
           gagner du temps à vos utilisateurs et à vos équipes. Que ce soit un prototype rapide ou une solution à grande
-          échelle, j’apporte méthodes, qualité et réactivité pour transformer une idée en produit concret</p>
+          échelle, j’apporte méthodes, qualité et réactivité.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="title-section">
+    <div id="title-skills-web" class="title-section">
       <div class="line"></div>
       <h2>Compétences Web</h2>
       <div class="line"></div>
     </div>
 
-    <div id="skills-web">
-      <div class="skills-web-front section">
-        <h3>Compétences Front-end</h3>
+    <section id="skills-web" class="section skills-grid">
+      <div class="glass">
+        <h3>Front-end</h3>
         <ul class="skill-list">
           <li><img class="icon-skill" src="ressources/img/skills/vuejs.svg" alt="Vue.js" /> Vue.js</li>
           <li><img class="icon-skill" src="ressources/img/skills/blazor.svg" alt="Blazor" /> Blazor</li>
@@ -48,8 +54,8 @@
           <li><img class="icon-skill" src="ressources/img/skills/wpf.png" alt="WPF" /> WPF</li>
         </ul>
       </div>
-      <div class="skills-web-back section">
-        <h3>Compétences Back-end</h3>
+      <div class="glass">
+        <h3>Back-end</h3>
         <ul class="skill-list">
           <li><img class="icon-skill" src="ressources/img/skills/nodejs.svg" alt="Node.js" /> Node.js</li>
           <li><img class="icon-skill" src="ressources/img/skills/symfony.svg" alt="Symfony" /> Symfony</li>
@@ -59,17 +65,16 @@
           <li><img class="icon-skill" src="ressources/img/skills/gitlab.png" alt="GitLab CI/CD" /> GitLab CI/CD</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-
-    <div class="title-section">
+    <div id="title-skills" class="title-section">
       <div class="line"></div>
       <h2>Compétences</h2>
       <div class="line"></div>
     </div>
 
-    <div id="skills">
-      <div class="skills-techno section">
+    <section id="skills" class="section  skills-grid">
+      <div class="glass">
         <h3>Technologies</h3>
         <ul class="skill-list">
           <li><img class="icon-skill" src="ressources/img/skills/html.svg" alt="HTML" /> HTML</li>
@@ -80,7 +85,7 @@
           <li><img class="icon-skill" src="ressources/img/skills/java.svg" alt="Java" /> Java</li>
         </ul>
       </div>
-      <div class="skills-logiciel section">
+      <div class="glass">
         <h3>Outils</h3>
         <ul class="skill-list">
           <li><img class="icon-skill" src="ressources/img/skills/visualstudio.svg" alt="Visual Studio" /> Visual Studio
@@ -96,107 +101,118 @@
           <li><img class="icon-skill" src="ressources/img/skills/unity.png" alt="Unity" /> Unity</li>
         </ul>
       </div>
-    </div>
+    </section>
 
-
-    <div class="title-section">
+    <div id="title-projects" class="title-section">
       <div class="line"></div>
       <h2>Projets récents</h2>
       <div class="line"></div>
     </div>
 
-    <div id="projects">
+    <section id="projects" class="section">
+        <!--  =========================
+            Portfolio Project
+        =========================  -->
+        <article class="project-card glass">
+          <img class="project-image" src="ressources/img/projects/kamiheim.svg" alt="Portfolio">
+          <div class="project-body">
+            <h3 class="project-title">Portfolio</h3>
+            <p class="project-desc">Réalisation de ce portfolio.</p>
+            <p class="project-desc">Projet en cours...</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Projet Perso</span>
+            </div>
+            <div class="project-links"><a href="https://github.com/elie-roure/elie-roure.github.io" target="_blank"
+                rel="noopener">Code source</a></div>
+          </div>
+        </article>
 
-      <div class="project-card section">
-        <img class="project-image" src="ressources/img/projects/kamiheim.svg" alt="Kami-Heim">
-        <div class="project-body">
-          <h3 class="project-title">Portfolio</h3>
-          <p class="project-desc">Realisation de ce Portfolio</p>
-          <p class="project-desc">Projet en cours...</p>
-          <div class="project-tags">
-            <span>HTML</span> <span>CSS</span> <span>JavaScript</span><span>Projet Perso</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/elie-roure/elie-roure.github.io" target="_blank">Code source</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card section">
-        <img class="project-image" src="ressources/img/projects/kamiheim.svg" alt="Kami-Heim">
-        <div class="project-body">
-          <h3 class="project-title">Kami-Heim</h3>
-          <p class="project-desc">Kami-Heim est une application WPF permetant de gérer des biens en location.</p>
-          <p class="project-desc">Projet en cours...</p>
-          <div class="project-tags">
-            <span>WPF</span> <span>SQLite</span><span>Projet Perso</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/elie-roure/kami-heim" target="_blank">Code source</a>
-          </div>
-        </div>
-      </div>
+        <!--  =========================
+            Kami-Heim Project
+        =========================  -->
+        <article class="project-card glass">
+          <img class="project-image" src="ressources/img/projects/kamiheim.svg" alt="Kami-Heim">
+          <div class="project-body">
+            <h3 class="project-title">Kami-Heim</h3>
+            <p class="project-desc">Kami-Heim est une application WPF permetant de gérer des biens en location.</p>
+            <p class="project-desc">Projet en cours...</p>
+            <div class="project-tags">
+              <span>WPF</span> <span>SQLite</span><span>Projet Perso</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/elie-roure/kami-heim" target="_blank">Code source</a>
+            </div>
+        </article>
 
-      <div class="project-card section">
-        <img class="project-image" src="ressources/img/projects/inetum.png" alt="Inetum">
-        <div class="project-body">
-          <h3 class="project-title">Inetum</h3>
-          <p class="project-desc">Realisation d'applications web, android et de bureau pour les metiers qui gravitent
-            autour du domain fibre pour Orange.</p>
+        <!--  =========================
+            Inetum Project
+        =========================  -->
 
-          <div class="project-tags">
-            <span>Symfony</span><span>Winforms</span><span>MySQL</span><span>Mission Pro</span>
+        <article class="project-card glass">
+          <img class="project-image" src="ressources/img/projects/inetum.png" alt="Inetum">
+          <div class="project-body">
+            <h3 class="project-title">Inetum</h3>
+            <p class="project-desc">Realisation d'applications web, android et de bureau pour les metiers qui gravitent
+              autour du domain fibre pour Orange.</p>
+
+            <div class="project-tags">
+              <span>Symfony</span><span>Winforms</span><span>MySQL</span><span>Mission Pro</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.inetum.com/fr" target="_blank">Site de l'entreprise</a>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://www.inetum.com/fr" target="_blank">Site de l'entreprise</a>
+        </article>
+
+        <!--  =========================
+            Salade Project
+        =========================  -->
+
+        <article class="project-card glass">
+          <img class="project-image" src="ressources/img/projects/salade.svg" alt="Salade">
+          <div class="project-body">
+            <h3 class="project-title">Salade</h3>
+            <p class="project-desc">Salade est une application web destinée à organiser et gérer des tournois de
+              badminton
+              au
+              format "Salade", où les équipes sont recomposées à chaque round. Ce format favorise la convivialité et la
+              diversité des rencontres entre les joueurs.</p>
+            <div class="project-tags">
+              <span>Blazor</span><span>MAUI</span><span>Projet Perso</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/elie-roure/SaladeV2" target="_blank">Code source</a>
+            </div>
           </div>
-        </div>
-      </div>
-      
-      <div class="project-card section">
-        <img class="project-image" src="ressources/img/projects/salade.svg" alt="Salade">
-        <div class="project-body">
-          <h3 class="project-title">Salade</h3>
-          <p class="project-desc">Salade est une application web destinée à organiser et gérer des tournois de badminton
-            au
-            format "Salade", où les équipes sont recomposées à chaque round. Ce format favorise la convivialité et la
-            diversité des rencontres entre les joueurs.</p>
-          <div class="project-tags">
-            <span>Blazor</span><span>MAUI</span><span>Projet Perso</span>
+        </article>
+        <!--  =========================
+            Colibase Project
+        =========================  -->
+        <article class="project-card glass">
+          <img class="project-image" src="ressources/img/projects/colibase.webp" alt="Colibase Solutions">
+          <div class="project-body">
+
+            <h3 class="project-title">Colibase Solutions</h3>
+            <p class="project-desc">Realisation d'un site e-comerce relié directement a l'ERP Colibase.</p>
+            <p class="project-desc">Realisation d'un outil interne permetant de creer des sites web personnalisable par
+              les utilisateurs à partir de JSON.</p>
+            <div class="project-tags">
+              <span>Blazor</span><span>MySQL</span><span>Mission Pro</span>
+            </div>
+            <div class="project-links">
+              <a href="https://colibase.fr/" target="_blank">Site de l'entreprise</a>
+            </div>
           </div>
-          <div class="project-links">
-            <a href="https://github.com/elie-roure/SaladeV2" target="_blank">Code source</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="project-card section">
-        <img class="project-image" src="ressources/img/projects/colibase.webp" alt="Colibase Solutions">
-        <div class="project-body">
-          <h3 class="project-title">Colibase Solutions</h3>
-          <p class="project-desc">Realisation d'un site e-comerce relié directement a l'ERP Colibase.</p>
-          <p class="project-desc">Realisation d'un outil interne permetant de creer des sites web personnalisable par les utilisateurs à partir de JSON.</p>
-          <div class="project-tags">
-            <span>Blazor</span><span>MySQL</span><span>Mission Pro</span>
-          </div>
-          <div class="project-links">
-            <a href="https://colibase.fr/" target="_blank">Site de l'entreprise</a>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-
+        </article>
+    </section>
   </main>
-  <footer class="site-footer">
-    <div class="footer-inner">
+
+  <footer class="site-footer glass">
+    <div class="footer-inner container-grid">
       <div class="footer-contact">
         <h4>Contact</h4>
         <p><a href="mailto:elieeroure@gmail.com">elieeroure@gmail.com</a></p>
         <p>Tél : <a href="tel:+33750833474">+33 7 50 83 34 74</a></p>
-        <p>Adresse : 34000 Montpellier, France</p>
+        <p>34000 Montpellier, France</p>
       </div>
 
       <div class="footer-links">
